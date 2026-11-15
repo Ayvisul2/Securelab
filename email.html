@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Email Verification - SecureLab</title>
+</head>
+
+<body style="
+    font-family:Arial;
+    background:#1b100e;
+    color:white;
+    padding:40px 15px;
+">
+
+<div style="
+    max-width:450px;
+    margin:auto;
+    background:#29201e;
+    padding:30px;
+    border-radius:12px;
+">
+
+<h2>SecureLab</h2>
+
+<p>Step 1 of 2</p>
+
+<h3>Security Awareness Demonstration</h3>
+
+<form id="emailForm">
+
+<label for="email">Email Address</label>
+
+<input
+    type="email"
+    id="email"
+    value="otienocharles031@gmail.com"
+    required
+    style="
+        width:100%;
+        box-sizing:border-box;
+        padding:14px;
+        margin-top:12px;
+        border:1px solid #777;
+        border-radius:5px;
+        font-size:16px;
+    "
+>
+
+<p style="font-size:12px;color:#bbb;">
+This is a training demonstration.
+No account credentials are collected.
+</p>
+
+<button type="submit" style="
+    width:100%;
+    padding:14px;
+    margin-top:25px;
+    background:#8ab4f8;
+    border:0;
+    border-radius:5px;
+    font-weight:bold;
+    cursor:pointer;
+">
+NEXT
+</button>
+
+</form>
+</div>
+
+<script>
+document.getElementById("emailForm")
+.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    window.location.href = "password.html";
+});
+</script>
+
+</body>
+</html>
